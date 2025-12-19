@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>דרושים – שוק דלאל</title>
+<style>
+  :root{
+    --green:#0B7A4B;
+    --orange:#F6A623;
+    --bg:#F7F7F2;
+    --card:#FFFFFF;
+    --text:#222222;
+    --muted:#666666;
+    --border:#E2E2DD;
+  }
+
+  body{
+    margin:0;
+    font-family:"Heebo",sans-serif;
+    background:var(--bg);
+    display:flex;
+    justify-content:center;
+    padding:40px 15px;
+    color:var(--text);
+  }
+
+  .wrap{
+    width:100%;
+    max-width:480px;
+    background:var(--card);
+    border-radius:14px;
+    padding:30px;
+    box-shadow:0 8px 28px rgba(0,0,0,0.08);
+    border:1px solid var(--border);
+  }
+
+  .logo{
+    width:140px;
+    margin:auto;
+    display:block;
+  }
+
+  h1{
+    text-align:center;
+    font-size:24px;
+    margin:20px 0 10px;
+    color:var(--green);
+  }
+
+  p{
+    text-align:center;
+    color:var(--muted);
+    margin:0 0 25px;
+  }
+
+  label{
+    font-weight:600;
+    margin-bottom:6px;
+    display:block;
+    color:var(--text);
+  }
+
+  input,textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid var(--border);
+    border-radius:8px;
+    margin-bottom:18px;
+    font-size:15px;
+    box-sizing:border-box;
+  }
+
+  button{
+    width:100%;
+    background:var(--green);
+    color:white;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+  }
+  button:hover{background:#09663f;}
+
+  .job-box{
+    margin-top:25px;
+    padding:20px;
+    border:1px solid var(--border);
+    border-radius:12px;
+    background:#fff;
+  }
+  .job-box h2{
+    font-size:18px;
+    margin:0 0 12px;
+    color:var(--green);
+  }
+  .job-box ul{
+    margin:0;
+    padding-right:20px;
+    line-height:1.6;
+  }
+  .job-box .spacer{
+    height:18px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="wrap">
+    <img src="logo.png" class="logo" alt="Shuk Dalal Logo" />
+
+    <h1>דרושים/ות עובדי/ות משרד</h1>
+    <p>מלאו את הפרטים ונחזור אליכם בהקדם</p>
+
+    <form action="https://formspree.io/f/mojavwag" method="POST">
+      <input type="hidden" name="_subject" value="שוק דלאל | מועמדות לעובד/ת משרד" />
+
+      <label for="name">שם מלא</label>
+      <input id="name" type="text" name="name" required autocomplete="name" />
+
+      <label for="phone">טלפון</label>
+      <input id="phone" type="tel" name="phone" required autocomplete="tel" inputmode="tel" />
+
+      <label for="city">עיר מגורים</label>
+      <input id="city" type="text" name="city" required autocomplete="address-level2" />
+
+      <button type="submit">שליחה</button>
+    </form>
+
+    <div class="job-box">
+      <h2>תיאור התפקיד</h2>
+      <ul>
+        <li>קליטת חשבוניות</li>
+        <li>סריקה לחשבוניות</li>
+        <li>הקמת מבצעים בקופה</li>
+        <li>שינוי מחירים בקופה</li>
+        <li>הדפסת שילוט למדפים</li>
+      </ul>
+
+      <div class="spacer"></div>
+
+      <h2>דרישות</h2>
+      <ul>
+        <li>ידע בתוכנת קומקס – יתרון</li>
+        <li>ידע בתחום הקמעונאות – יתרון</li>
+      </ul>
+
+      <div class="spacer"></div>
+
+      <h2>היקף המשרה</h2>
+      <ul>
+        <li>עבודה בימים א׳–ה׳</li>
+        <li>שעות: 08:00–16:00</li>
+        <li>המשרה בחיפה והסביבה</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
